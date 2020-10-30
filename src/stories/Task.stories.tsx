@@ -1,32 +1,34 @@
-import React from 'react';
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0';
-
-import Task, { taskProps } from '../components/Taskbox/Task'
+import React from "react";
+import Task, { props } from "../components/Task/index";
+import { Story, Meta } from "@storybook/react/types-6-0";
 
 export default {
-    title: 'Example/Task',
-    component: Task,
-
+  component: Task,
+  title: "Task",
+  args: {
+    task: { id: "1", title: "New Task", state: "TASK_INBOX" },
+    onArchiveTask: () => {
+      console.log("task archived");
+    },
+    onPinTask: () => {
+      console.log("task pinned");
+    },
+    onUnpinTask: () => {
+      console.log("task unpinned");
+    },
+  },
 } as Meta;
 
-const Template: Story<taskProps> = (args) => <Task {...args} />;
+const Template: Story<props> = (args) => <Task {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-    title: "Workout", theme: "primary", done: true
-};
+export const Default = Template.bind({});
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-    title: "Workout", theme: "secondary", done: true
-};
-export const Checked = Template.bind({});
-Checked.args = {
-    title: "Workout", theme: "secondary", done: true
-};
-export const unChecked = Template.bind({});
-unChecked.args = {
-    title: "Workout", theme: "secondary", done: false
+export const Pinned = Template.bind({});
+Pinned.args = {
+  task: { id: "1", title: "Pinned Task", state: "TASK_PINNED" },
 };
 
+export const Archived = Template.bind({});
+Archived.args = {
+  task: { id: "1", title: "Archived Task", state: "TASK_ARCHIVED" },
+};
