@@ -1,15 +1,18 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import store from './lib/redux';
+import './App.css';
+import TaskBox from './components/Taskbox/index';
 
-import InboxScreen from './components/InboxScreen';
-
-import './index.css';
 function App() {
+  const tasks = [
+    { title: 'new', done: false },
+    { title: 'new', done: true },
+    { title: 'new', done: false },
+  ]
   return (
-    <Provider store={store}>
-      <InboxScreen />
-    </Provider>
+    <div className="App">
+      <TaskBox tasks={tasks} theme="primary" />
+    </div>
   );
 }
+
 export default App;
