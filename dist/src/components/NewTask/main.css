@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+
+
+html {
+
+  background-color: #fafafa;
+
+}
+
+* {
+
+  font-family: "Nunito", sans-serif;
+
+  margin: 0;
+
+}
+
+.newTaskContainer {
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: 70%;
+
+  height: 40%;
+
+  padding: 5vh;
+
+  padding-top: 3vh;
+
+  text-align: center;
+
+  background-color: white;
+
+  margin: 0 auto;
+
+  box-shadow: 5px 5px 20px #e0e0e0;
+
+  border-radius: 10px;
+
+}
+
+
+
+.newTaskContainer .newTaskHeading {
+
+  font-size: 7vh;
+
+  margin-bottom: 10vh;
+
+  color: black;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+}
+
+
+
+.newTaskContainer input[type="text"] {
+
+  padding-left: 1vh;
+
+  padding-right: 2vh;
+
+  font-size: 4.5vh;
+
+  margin-bottom: 6vh;
+
+}
+
+
+
+.newTaskContainer .buttonContainer {
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  width: 40vw;
+
+  margin: 0 auto;
+
+}
+
+
+
+.newTaskContainer .buttonContainer Button {
+
+  width: 10vw;
+
+  height: 8vh;
+
+}

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+
+
+html {
+
+  background-color: #fafafa;
+
+}
+
+* {
+
+  font-family: "Nunito", sans-serif;
+
+  margin: 0;
+
+}
+
+.list-item {
+
+  display: flex;
+
+  flex-direction: row;
+
+  width: 80%;
+
+  background-color: white;
+
+  margin: 1vh auto;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-left: 1vh;
+
+  padding-right: 1vh;
+
+  height: 40px;
+
+  box-shadow: 5px 5px 20px #e0e0e0;
+
+  margin-bottom: 2vh;
+
+}
+
+
+
+.list-item .checkbox_Text {
+
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+
+  width: 90%;
+
+}
+
+.list-item .checkbox_Text p {
+
+  width: 90%;
+
+  margin-left: 2vh;
+
+  text-overflow: ellipsis;
+
+  font-size: 100%;
+
+  overflow: hidden;
+
+  font-weight: bold;
+
+}
+
+.list-item .checkbox_Text label {
+
+  margin-left: 2vh;
+
+}
+
+.list-item .checkbox_Text .archived {
+
+  width: 90%;
+
+  color: rgb(124, 124, 128);
+
+  margin-left: 1vh;
+
+  text-overflow: ellipsis;
+
+  font-size: 100%;
+
+  overflow: hidden;
+
+  font-weight: bold;
+
+}
+
+
+
+.starUnpinned {
+
+  color: rgba(134, 133, 133, 0.5);
+
+  cursor: pointer;
+
+}
+
+
+
+.starUnpinned:hover {
+
+  cursor: pointer;
+
+  color: #616161;
+
+}
+
+
+
+.starPinned {
+
+  cursor: pointer;
+
+  color: #616161;
+
+}
+
+
+
+.emptyListWrapper {
+
+  margin: 5vh auto;
+
+  text-align: center;
+
+}
+
+
+
+.emptyListWrapper .tickIcon {
+
+  transform: scale(3);
+
+  color: #212121;
+
+  margin-bottom: 5vh;
+
+}
+
+
+
+.emptyListWrapper .emptyListText {
+
+  font-size: 5vh;
+
+}
+
+
+
+.loader {
+
+  text-align: center;
+
+  margin-top: 5vh;
+
+}
+
