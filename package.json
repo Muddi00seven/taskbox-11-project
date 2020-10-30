@@ -11,7 +11,8 @@
     "react-redux": "^7.2.1",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5",
-    "surge": "^0.21.6"
+    "surge": "^0.21.6",
+    "typescript": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
