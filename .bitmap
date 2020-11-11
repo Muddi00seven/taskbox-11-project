@@ -26,7 +26,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "muh-hasan.task-box/new-task@0.0.2": {
+    "muh-hasan.task-box/new-task@1.0.0": {
         "files": [
             {
                 "relativePath": "src/components/NewTask/index.tsx",
@@ -79,6 +79,49 @@
         "trackDir": "src/components/Task",
         "origin": "AUTHORED",
         "exported": true
+    },
+    "src@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/App.css",
+                "test": false,
+                "name": "App.css"
+            },
+            {
+                "relativePath": "src/App.tsx",
+                "test": false,
+                "name": "App.tsx"
+            },
+            {
+                "relativePath": "src/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            },
+            {
+                "relativePath": "src/react-app-env.d.ts",
+                "test": false,
+                "name": "react-app-env.d.ts"
+            },
+            {
+                "relativePath": "src/stories/newTask.stories.tsx",
+                "test": false,
+                "name": "newTask.stories.tsx"
+            },
+            {
+                "relativePath": "src/stories/task.stories.tsx",
+                "test": false,
+                "name": "task.stories.tsx"
+            },
+            {
+                "relativePath": "src/stories/taskList.stories.tsx",
+                "test": false,
+                "name": "taskList.stories.tsx"
+            }
+        ],
+        "mainFile": "src/index.tsx",
+        "trackDir": "src",
+        "origin": "AUTHORED",
+        "exported": false
     },
     "version": "14.8.8"
 }

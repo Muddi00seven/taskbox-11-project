@@ -13,7 +13,7 @@ export default function NewTask(props: props) {
       <h2 className="newTaskHeading">Create a New Task</h2>
       <input
         type="text"
-        placeholder="Planning something?"
+        placeholder="Enter your new task"
         onChange={
           !!props.inputOnChange
             ? (e) => {
@@ -23,10 +23,10 @@ export default function NewTask(props: props) {
         }
       ></input>
       <div className="buttonContainer">
-        <Button onClick={props.handleSave}>Save</Button>
-        <Button color="secondary" onClick={props.handleCancel}>
+        <button className="save-btn" onClick={props.handleSave}>Save</button>
+        <button className="cancel-btn" onClick={props.handleCancel}>
           Cancel
-        </Button>
+        </button>
       </div>
     </div>
   );
